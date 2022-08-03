@@ -1,14 +1,29 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
-const Home = () => (
-  <div className="home-container">
-    <img
-      src="https://assets.ccbp.in/frontend/react-js/home-blog-img.png"
-      alt="home"
-      className="home-img"
-    />
-    <h1 className="home-heading">Home</h1>
-  </div>
+const Header = () => (
+  <nav className="nav-header">
+    <div className="blog-container">
+      <h1 className="blog-title">My Blog</h1>
+      <ul className="nav-menu">
+        <li>
+          <Link className="nav-link" to="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/about">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/contact">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </nav>
 )
 
-export default Home
+export default Header
