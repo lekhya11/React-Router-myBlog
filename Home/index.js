@@ -12,3 +12,18 @@ const Home = () => (
 )
 
 export default Home
+
+import './index.css'
+
+const Home = () => (
+  <div className="home-container">
+    <img
+      src="https://www.memuplay.com/blog/wp-content/uploads/2020/08/BTS-Universe.jpg"
+      alt="home"
+      className="home-img"
+    />
+    <h1 className="home-heading">Welcome to the BTS Universe</h1>
+  </div>
+)
+
+export default Home
